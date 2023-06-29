@@ -11,10 +11,28 @@
         <img src="images\OnPaste.20230628-142648-removebg-preview.png" >
         <img src="images\OnPaste.20230628-153859-removebg-preview.png" style="height: 150px; width: auto;">
         <div class="menu">
-            <a href="drinks.html" style="font-size: 30px;">Drinks</a>
+            <!-- <a href="drinks.html" style="font-size: 30px;">Drinks</a>
             <br>
-            <a href="snaks.html" style="font-size: 30px;">Snacks</a>
+            <a href="snaks.html" style="font-size: 30px;">Snaks</a> -->
+            <form method="get" id="formsub" onsubmit="r()">
+                <input type="radio" id="Drinks" name="fav_language" value="Drinks" checked>
+                <label for="Drinks">Drinks</label><br>
+                <input type="radio" id="Snaks" name="fav_language" value="Snaks">
+                <label for="Snaks">Snaks</label><br>
+                <div class="button">
+                <input type="submit" value="View">
+                </div>
+            </form>
         </div>
     </div>
 </body>
+<script>
+    function r() {
+        if (document.getElementById("Drinks").checked) {
+            document.getElementById("formsub").action="drinks.html"
+        } else {
+            document.getElementById("formsub").action="snaks.html"
+        }
+    }
+</script>
 </html>
