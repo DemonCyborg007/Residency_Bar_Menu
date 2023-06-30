@@ -72,32 +72,42 @@ ul {
     padding-inline-start: 10px;
    color: rgb(3, 80, 3);
 }
-#popup{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-#popup li{
-  border: 1px solid white;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: white;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block;
-  position: relative;
-}
+#myInput {
+    background-image: url('/images/OnPaste_20230630-200933-transformed-removebg-preview.png'); /* Add a search icon to input */
+    background-size: 40px;
+    background-position: 2px 1px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 85%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
 
-
-/* Style the close button (span) */
-.close {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  padding: 12px 16px;
-  transform: translate(0%, -50%);
-}
-
-.close:hover {background: #bbb;}
+  #popup{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid white;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+  }
+  
+  
+  /* Style the close button (span) */
+  .close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+  }
+  
+  .close:hover {background: #bbb;}
