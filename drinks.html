@@ -8,17 +8,16 @@
 
 </head>
 <body>
-    <ul id="popup">
-        <li>
-            *Taxes as Applicable<span class="close">&times;</span>
-        </li>
-    </ul>
+    <div id="popup">
+        *Taxes as Applicable<span class="close" onclick="popup()">&times;</span>
+    </div>
     <div class="navbar">
         <a href="drinks.html" class="active">Drinks</a>
         <a href="snaks.html">Snacks</a>
     </div>
     <div class="container">
         <h1 style="font-size: 35px;">Drinks</h1>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for drinks..">
         <div class="subcon1"  >
             <h2 >Imported Blended Scotch</h2>
             <hr>
@@ -161,14 +160,38 @@
     </div>
 </body>
     <script>
-        var closebtns = document.getElementsByClassName("close");
-        var i;
+        function popup(){   
+    var closebtns = document.getElementsByClassName("close");
+var i;
 
-        // Loop through the elements, and hide the parent, when clicked on
-        for (i = 0; i < closebtns.length; i++) {
-            closebtns[i].addEventListener("click", function() {
-            this.parentElement.style.display = 'none';
-          });
-        }
+// Loop through the elements, and hide the parent, when clicked on
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+ }
+
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, p, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+//   ul = document.getElementById("myUL");
+  ul = document.getElementsByTagName('ul');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < ul.length; i++) {
+    p = ul[i].getElementsByTagName("p")[0];
+    txtValue = p.textContent || p.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      ul[i].style.display = "";
+    } else {
+      ul[i].style.display = "none";
+    }
+  }
+}
+
+
     </script>
 </html>
