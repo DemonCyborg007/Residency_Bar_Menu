@@ -64,7 +64,7 @@ h2{
   }
 
   #myInput {
-    background-image: url('/images/OnPaste_20230630-200933-transformed-removebg-preview.png'); /* Add a search icon to input */
+    background-image: url('./images/OnPaste_20230630-200933-transformed-removebg-preview.png'); /* Add a search icon to input */
     background-size: 40px;
     background-position: 2px 1px; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
