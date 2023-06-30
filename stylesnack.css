@@ -62,17 +62,8 @@ h2{
     background-color: #04AA6D;
     color: white;
   }
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 10px;
-   color: rgb(3, 80, 3);
-}
-#myInput {
+
+  #myInput {
     background-image: url('/images/OnPaste_20230630-200933-transformed-removebg-preview.png'); /* Add a search icon to input */
     background-size: 40px;
     background-position: 2px 1px; /* Position the search icon */
