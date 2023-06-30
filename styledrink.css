@@ -97,7 +97,8 @@ ul {
   transform: translate(0%, -50%);
 }
 
-.close:hover {background: #bbb;}\
+.close:hover {background: #bbb;}
+
 #myInput {
     background-image: url('/images/sicon-removebg-preview.png'); /* Add a search icon to input */
     background-size: 40px;
