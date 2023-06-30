@@ -8,11 +8,9 @@
 
 </head>
 <body>
-    <ul id="popup">
-        <li>
-            *Taxes as Applicable<span class="close">&times;</span>
-        </li>
-    </ul>
+    <div id="popup">
+            *Taxes as Applicable<span class="close" onclick="popup()">&times;</span>
+    </div>
     <div class="navbar">
         <a href="drinks.html" >Drinks</a>
         <a href="snaks.html"  class="active">Snacks</a>
@@ -60,8 +58,28 @@
         </div>
     </div>
 </body>
-    <script>
-        var closebtns = document.getElementsByClassName("close");
+   <script>
+    function myFunction() {
+    // Declare variables
+    var input, filter, ul, p, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+  //   ul = document.getElementById("myUL");
+    ul = document.getElementsByTagName('ul');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < ul.length; i++) {
+      p = ul[i].getElementsByTagName("p")[0];
+      txtValue = p.textContent || p.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        ul[i].style.display = "";
+      } else {
+        ul[i].style.display = "none";
+      }
+    }
+  }
+ function popup(){   
+    var closebtns = document.getElementsByClassName("close");
 var i;
 
 // Loop through the elements, and hide the parent, when clicked on
@@ -70,5 +88,6 @@ for (i = 0; i < closebtns.length; i++) {
     this.parentElement.style.display = 'none';
   });
 }
-    </script>
+ }
+</script>
 </html>
