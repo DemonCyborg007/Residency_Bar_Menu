@@ -22,18 +22,16 @@ body {
 
 h1 {
     font-size: 72px;
-    background: -webkit-linear-gradient(#ff6600, #b700ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(197, 13, 13)
   }
 
 h2{
-    color: rgba(197, 144, 47, 0.966);
+    color: rgb(197, 13, 13);
 }
 
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
-    background-color: rgba(197, 144, 47, 0.966);
+    background-color: rgb(197, 13, 13);
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -59,12 +57,12 @@ h2{
   
   /* Add a color to the active/current link */
   .navbar a.active {
-    background-color: #04AA6D;
+    background-color: rgb(24, 24, 24);
     color: white;
   }
 
   #myInput {
-    background-image: url('./images/OnPaste_20230630-200933-transformed-removebg-preview.png'); /* Add a search icon to input */
+    background-image: url('/images/OnPaste_20230630-200933-transformed-removebg-preview.png'); /* Add a search icon to input */
     background-size: 40px;
     background-position: 2px 1px; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
