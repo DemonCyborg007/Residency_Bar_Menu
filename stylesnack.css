@@ -31,12 +31,12 @@ h2{
 
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
+    z-index: 9999;
     background-color: rgb(197, 13, 13);
     overflow: hidden;
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 1;
   }
   
   /* Style the links inside the navigation bar */
